@@ -1,0 +1,26 @@
+<html>
+  <table>
+  <tr>
+    <th>Загрузка файла</th>
+    <th>Лист файлов в {{title}} бакете</th>
+  </tr>
+  <tr>
+    <td>
+      <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
+    </td>
+    <td>
+      <ul>
+        {% if file_names %}
+        {% for file_name in file_names %}
+        <li>{{file_name}}</li>
+        {% endfor %}
+        {% endif %}
+      </ul>
+    </td>
+  </tr>
+
+</table>
+</html>
