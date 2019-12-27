@@ -9,8 +9,8 @@ def get_file_names_in_bucket(bucket):
 
 def get_bucket_by_name(name):
 
-    access_key = 'aJeL3z95tLvVFtb1hCX6iu'
-    secret_key = 'auMaYpJuHg2xXZa7gsMSqYDYziczF6UyHaMUz3GBnKUa'
+    access_key = 'xxx'
+    secret_key = 'xxxxx'
 
     conn = boto.connect_s3(
             aws_access_key_id = access_key,
